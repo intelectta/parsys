@@ -1,0 +1,124 @@
+/* src/App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f0f1a, #1a1a2e);
+  color: #e0e0ff;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: #000814;
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 3px solid #00ff88;
+}
+
+.header h1 {
+  font-size: 4rem;
+  background: linear-gradient(90deg, #00ff88, #00b7ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+.container {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.big-btn {
+  padding: 1.5rem 2rem;
+  font-size: 1.4rem;
+  background: #001d3d;
+  color: #00ff88;
+  border: 2px solid #00ff88;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  min-width: 280px;
+}
+
+.big-btn:hover {
+  background: #003566;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 255, 136, 0.3);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #001d3d;
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid #00ff88;
+  cursor: pointer;
+  transition: 0.4s;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 255, 136, 0.4);
+}
+
+.history,
+.samples {
+  background: #000814;
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid #334;
+  margin-top: 2rem;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+pre {
+  text-align: left;
+  background: #000;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #00ff88;
+  white-space: pre-wrap;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #000814;
+  border-top: 1px solid #334;
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
